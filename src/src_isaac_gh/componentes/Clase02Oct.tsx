@@ -1,5 +1,3 @@
-import viteLogo from "../../public/vite.svg";
-
 interface NombreProps{
     precio: number,
     titulo: string,
