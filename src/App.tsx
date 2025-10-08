@@ -12,7 +12,10 @@ import HomeView from './views/HomeView';
 function App() {
   return (
     <>
-      {/* <AppTutor/>
+
+      {
+       <Presentacion nombre='Laura' descripcion='me gusta la robotica y dormir' edad={25} />
+      /* <AppTutor/>
       
       <Presentacion nombre='Laura' descripcion='me gusta la robotica y dormir' edad={25} />
       <PresentacionOAV nombre='Orlando' descripcion='Estudiante de Sistemas' edad={23} />

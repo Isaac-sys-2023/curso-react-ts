@@ -1,5 +1,8 @@
 import viteLogo from "../../public/vite.svg";
 import Tarea1 from "./componentes/Tarea1";
+import Tarea2 from "./componentes/Tarea2";
+
+
 
 interface PresentacionProps{
     nombre: string,
@@ -14,6 +17,7 @@ function Presentacion({nombre, edad, descripcion}: PresentacionProps){
             <p>{descripcion}</p>
             <p>edad: {edad}</p>
             <Tarea1/>
+            <Tarea2/>
         </>
     )
 }
