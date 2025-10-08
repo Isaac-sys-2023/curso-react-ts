@@ -1,11 +1,5 @@
 import { useState } from "react";
-
-interface Persona {
-    nombre: string;
-    edad: number;
-    ciudad: string;
-    descripcion?: string;
-}
+import type { Persona } from "../types/Persona";
 
 function PerfilPersona() {
     const [persona, setPersona] = useState<Persona>({
