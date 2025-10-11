@@ -1,15 +1,22 @@
-import Tarea1 from "./Tarea1View";
-import Tarea2 from "./Tarea2View";
+import { useNavigate } from "react-router-dom";
 
-//AQUI SE RENDERIZA LAS TAREAS
 interface PropsOAV{
-    nombre: string,
-    edad: number,
-    descripcion: string,
+    nombre?: string,
+    edad?: number,
+    descripcion?: string,
 }
 
+//Componente que recibe props y las muestra, con valores por defecto
+const PresentacionOAV = ({nombre = "Valor por Defecto", edad = 0, descripcion = "Sin descripcion"}: PropsOAV) => { 
+    const navigate = useNavigate();
 
-const PresentacionOAV = ({nombre, edad, descripcion}: PropsOAV) => { 
+    const volverTareasOAV = () =>{
+        navigate("/tareasOAV");
+    }
+    const navegarTareaX = (Numero: number) => {
+        navigate(`/tarea${Numero}`);
+    }
+
     return (
         <>
         <div>
@@ -18,15 +25,13 @@ const PresentacionOAV = ({nombre, edad, descripcion}: PropsOAV) => {
             <p>Descripcion: {descripcion}</p>
             <p>Edad: {edad}</p>
         </div>
+        
         <div>
-            Tarea 1, hooks useState:
-            <Tarea1/>
-        </div>    
-        <div>   
-            Tarea 2, renderizar, map y types:
-            <Tarea2/>
+            <button onClick={volverTareasOAV}>Volver a tareasOAV</button>
+            <button onClick={() => navegarTareaX(0)}>Ir a Tarea 0</button>
+            <button onClick={() => navegarTareaX(1)}>Ir a Tarea 1</button>
+            <button onClick={() => navegarTareaX(2)}>Ir a Tarea 2</button>
         </div>
-            La tarea 3 no la hice por falta de tiempo
         </>
     );
 }

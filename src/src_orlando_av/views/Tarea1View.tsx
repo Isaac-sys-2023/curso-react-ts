@@ -1,6 +1,9 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Clase4 = () => {
+  const navigate = useNavigate();
+
   const [count, setCount] = useState<number>(1);
   const [numero, setNumero] = useState<number>(1);
   const [Revisado, setRevisado] = useState<boolean>(false);
@@ -19,8 +22,16 @@ const Clase4 = () => {
     setNumero(1);
   }
 
+  const volverTareasOAV = () =>{
+    navigate("/tareasOAV");
+  }
+  const navegarTareaX = (Numero: number) => {
+      navigate(`/tarea${Numero}`);
+  }
+
   return (
     <div className="container-class">
+      TAREA 1, uso de Usestate:
       <div>
         <h3>Numero: {count}</h3>
         <button onClick={multiplicar}>Multiplicar</button>
@@ -40,6 +51,13 @@ const Clase4 = () => {
       <button onClick={() => setRevisado(!Revisado)}>
         {Revisado ? "No revisado" : "Revisar"}
       </button>
+
+    <div>
+        <button onClick={volverTareasOAV}>Volver a tareasOAV</button>
+        <button onClick={() => navegarTareaX(0)}>Ir a Tarea 0</button>
+        <button onClick={() => navegarTareaX(1)}>Ir a Tarea 1</button>
+        <button onClick={() => navegarTareaX(2)}>Ir a Tarea 2</button>
+    </div>
     </div>
   );
 }

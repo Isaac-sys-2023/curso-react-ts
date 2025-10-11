@@ -1,1 +1,28 @@
-//Aqui iran las rutas de navegacion para cada tarea pero me falta revisar las clases y practicar un poco mas(No hay tiempo :,v)
+import { useNavigate } from "react-router-dom";
+
+const TareasOAV = () => {
+    const navigate = useNavigate();
+
+    const goToHome = () =>{
+        navigate("/");
+    }
+    const navegarTareaX = (Numero: number) => {
+        navigate(`/tarea${Numero}`);
+    }
+
+    return (
+    <>
+        <button onClick={goToHome}>Volver a Home</button>
+        <h1>Tareas de Orlando AV</h1>
+        <ul>
+            <li><button onClick={() => navegarTareaX(0)}>Ir a Tarea 0</button></li>
+            <li><button onClick={() => navegarTareaX(1)}>Ir a Tarea 1</button></li>
+            <li><button onClick={() => navegarTareaX(2)}>Ir a Tarea 2</button></li>
+        </ul>   
+    </>
+    )
+
+}
+
+export default TareasOAV;
+
