@@ -26,7 +26,7 @@ const Clase4 = () => {
     navigate("/tareasOAV");
   }
   const navegarTareaX = (Numero: number) => {
-      navigate(`/tarea${Numero}`);
+      navigate(`/tareasOAV/tarea${Numero}`);
   }
 
   return (

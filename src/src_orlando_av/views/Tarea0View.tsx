@@ -14,7 +14,7 @@ const PresentacionOAV = ({nombre = "Valor por Defecto", edad = 0, descripcion = 
         navigate("/tareasOAV");
     }
     const navegarTareaX = (Numero: number) => {
-        navigate(`/tarea${Numero}`);
+        navigate(`/tareasOAV/tarea${Numero}`);
     }
 
     return (

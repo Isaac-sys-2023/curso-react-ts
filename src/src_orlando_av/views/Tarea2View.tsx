@@ -15,10 +15,10 @@ const Clase5 = () => {
         navigate("/tareasOAV");
     }
     const navegarTareaX = (Numero: number) => {
-        navigate(`/tarea${Numero}`);
+        navigate(`/tareasOAV/tarea${Numero}`);
     }
     const navegarATarea = (tarea1:Tarea) => {
-        navigate(`/tarea2/${tarea1.id}/${tarea1.titulo}/${tarea1.descripcion}`);
+        navigate(`/tareasOAV/tarea2/${tarea1.id}/${tarea1.titulo}/${tarea1.descripcion}`);
     }
 
     return (
