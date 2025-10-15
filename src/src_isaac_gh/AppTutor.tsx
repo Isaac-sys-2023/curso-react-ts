@@ -6,6 +6,7 @@ import CardProducto, { type Empresa, type Producto } from "./componentes/Clase04
 import PerfilPersona from "./componentes/Clase04Oct3";
 
 import { Routes, Route } from "react-router-dom";
+import ClaseOctCatorce from "./componentes/Clase14Oct";
 
 const AppTutor = () => {
     const producto1: Producto = {
@@ -31,6 +32,7 @@ const AppTutor = () => {
             <Routes>
                 <Route path="/Clase2" element={<PerfilPersona/>}/>
                 <Route path="/Clase3" element={<ClaseOctCuatro/>}/>
+                <Route path="/Clase7" element={<ClaseOctCatorce/>}/>
             </Routes>
         </div>
     )
