@@ -4,6 +4,7 @@ import Tarea1View from './views/Tarea1View';
 import Tarea0View from './views/Tarea0View';
 import DetalleTarea2 from './componentes/DetalleTarea2';
 import HomeOAVView from "./views/HomeOAVView";
+import TareaView4 from "./views/TareaView4";
 
 const TareasOAV = () => {
   return (
@@ -13,6 +14,7 @@ const TareasOAV = () => {
         <Route path="tarea0" element={<Tarea0View />} />
         <Route path="tarea1" element={<Tarea1View />} />
         <Route path="tarea2" element={<Tarea2View />} />
+        <Route path="tarea4View" element={<TareaView4 />} />
         <Route
           path="tarea2/:id/:titulo/:descripcion"
           element={<DetalleTarea2 />}
