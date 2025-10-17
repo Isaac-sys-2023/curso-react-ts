@@ -31,6 +31,7 @@ const ClaseOctDiesiseis = () => {
 
     if(form.aceptaTerminos === false){
         alert("Tienes que aceptar los terminos");
+        
         return;
     }
 
