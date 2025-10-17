@@ -57,39 +57,38 @@ const Tarea5ViewLogin = () => {
                 </form>
             </div>
 
+            <div>
+                <h2>LOGIN TIKTOK</h2>
+                <button onClick={() => window.open("https://www.tiktok.com/login/phone-or-email")}>
+                    Link
+                </button>
+                <form action="#" onSubmit={handleSubmitTk}>
+                
 
+                <div>
+                    <select name="codigoCel" value={CodTelefonoTk} onChange={(e) => setCodTelefonoTk(String(e.target.value))} required>
+                        <option value="">Codigo</option>
+                        <option value="+591 Bol">+591 Bol</option>
+                        <option value="+52 Mex">+52 Mex</option>
+                        <option value="+57 Col">+57 Col</option>
+                    </select>
+                    <label>Teléfono</label>
+                    <input type="text" maxLength={10} placeholder="Número de teléfono" value={NumTelefonoTk} onChange={(e) => setNumTelefonoTk(Number(e.target.value))} required />
+                </div>
 
+                <div>
+                    <label>Código de verificación</label>
+                    <input type="text" maxLength={6} minLength={6} placeholder="Ingresa el código de 6 dígitos" value={codigoVerificacionTk} onChange={(e) => setCodigoVerificacionTk(e.target.value)} required />
+                    <button type="submit">Enviar código</button>
+                </div>
 
-    <div>
-        <h2>LOGIN TIKTOK</h2>
-        <button onClick={() => window.open("https://www.tiktok.com/login/phone-or-email")}>
-            Link
-        </button>
-        <form action="#" onSubmit={handleSubmitTk}>
-        
+                {codigoVerificacionTk.length > 5 && (
+                    <button type="submit">Iniciar Sesion</button>
+                )}
 
-        <div>
-            <select name="codigoCel" value={CodTelefonoTk} onChange={(e) => setCodTelefonoTk(String(e.target.value))} required>
-                <option value="">Codigo</option>
-                <option value="+591 Bol">+591 Bol</option>
-                <option value="+52 Mex">+52 Mex</option>
-                <option value="+57 Col">+57 Col</option>
-            </select>
-            <label>Teléfono</label>
-            <input type="text" maxLength={10} placeholder="Número de teléfono" value={NumTelefonoTk} onChange={(e) => setNumTelefonoTk(Number(e.target.value))} required />
-        </div>
+                </form>
 
-        <div>
-            <label>Código de verificación</label>
-            <input type="text" maxLength={6} minLength={6} placeholder="Ingresa el código de 6 dígitos" value={codigoVerificacionTk} onChange={(e) => setCodigoVerificacionTk(e.target.value)} required />
-            <button type="submit">Enviar código</button>
-        </div>
-
-        {/* <button type="submit">Siguiente</button> */}
-
-        </form>
-
-    </div>
+            </div>
 
         </>
     );
