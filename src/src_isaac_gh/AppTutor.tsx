@@ -4,9 +4,9 @@ import ClaseOctCuatro from "./componentes/Clase04Oct";
 import PerfilPersona from "./componentes/Clase04Oct3";
 
 import { Routes, Route } from "react-router-dom";
-import ClaseOctCatorce from "./componentes/Clase14Oct";
-import ClaseOctQuince from "./componentes/Clase15Oct";
-import ClaseOctDiesiseis from "./componentes/Clase16Oct";
+import ClaseOctCatorce from "./views/Clase14OctView";
+import ClaseOctQuince from "./views/Clase15OctView";
+import ClaseOctDiesiseis from "./views/Clase16OctView";
 
 const AppTutor = () => {
     return (
