@@ -1,5 +1,6 @@
 
 import type { Horario } from "./Horario";
+import type { Tech } from "./Tech";
 import type { Tutor } from "./Tutor";
 
 export interface Curso {
@@ -16,4 +17,7 @@ export interface Curso {
     estaCancelado: boolean;
     imgCurso: string;
     aficheImg?: string;
+    techs: Tech[];
+
+    estudiantes?: Tutor[];
 }

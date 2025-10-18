@@ -21,3 +21,16 @@ export const afichesAssets = {
     imgPythonAfiche,
     imgReactAfiche
 }
+
+export const afichesArrayAssets = [
+    imgAutocadAfiche,
+    imgAndroidAfiche,
+    imgBackendAfiche,
+    imgGodotAfiche,
+    imgHTMLAfiche,
+    imgLangChainAfiche,
+    imgLinuxAfiche,
+    imgManchineAfiche,
+    imgPythonAfiche,
+    imgReactAfiche
+]

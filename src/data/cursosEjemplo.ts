@@ -2,6 +2,9 @@ import type { Curso } from "../types/Curso";
 import { tutoresAssets } from "../assets/tutores/tutores";
 import { cursosAssets } from "../assets/cursos/cursos";
 import { afichesAssets } from "../assets/afiches/afiches";
+import { logosCursosAssets } from './../assets/cursosLogos/cursosLogos';
+import { redesAssets } from "../assets/redes-sociales/redes";
+import { estudiantesReact } from "./estudiantesReactData";
 
 export const cursosEjemplo: Curso[] = [
   {
@@ -33,6 +36,7 @@ export const cursosEjemplo: Curso[] = [
     estaCancelado: true,
     imgCurso: cursosAssets.imgAutocadCursos,
     aficheImg: afichesAssets.imgAutocadAfiche,
+    techs: [{ nombre: "Autocad", imgUrl: logosCursosAssets.cursoAutocad.logoAutocad, }]
   },
   {
     titulo: "Introducción a la Web con HTML y CSS",
@@ -58,6 +62,7 @@ export const cursosEjemplo: Curso[] = [
     estaCancelado: false,
     imgCurso: cursosAssets.imgHTMLCursos,
     aficheImg: afichesAssets.imgHTMLAfiche,
+    techs: [{ nombre: "HTML", imgUrl: logosCursosAssets.cursoHTML.logoHTML }, { nombre: "CSS", imgUrl: logosCursosAssets.cursoHTML.logoCSS }]
   },
   {
     titulo: "Desarrollo en Android",
@@ -83,6 +88,7 @@ export const cursosEjemplo: Curso[] = [
     estaCancelado: false,
     imgCurso: cursosAssets.imgAndroidCursos,
     aficheImg: afichesAssets.imgAndroidAfiche,
+    techs: [{ nombre: "Android", imgUrl: logosCursosAssets.cursoAndroid.logoAndroid }, { nombre: "Android-Studio", imgUrl: logosCursosAssets.cursoAndroid.logoAndroidStudio }, { nombre: "Kotlin", imgUrl: logosCursosAssets.cursoAndroid.logoKotlin }]
   },
   {
     titulo: "Linux a tu manera: Introducción y Personalización",
@@ -110,9 +116,11 @@ export const cursosEjemplo: Curso[] = [
     precioGeneral: 80,
     precioUMSS: 70,
     status: "Por Iniciar",
+    // status: "Finalizado",
     estaCancelado: false,
     imgCurso: cursosAssets.imgLinuxCursos,
     aficheImg: afichesAssets.imgLinuxAfiche,
+    techs: [{ nombre: "Debian", imgUrl: logosCursosAssets.cursoLinux.logoDebian }, { nombre: "Linux", imgUrl: logosCursosAssets.cursoLinux.logoLinux }, { nombre: "Wayland", imgUrl: logosCursosAssets.cursoLinux.logoWayland }, { nombre: "Xorg", imgUrl: logosCursosAssets.cursoLinux.logoXorg }]
   },
   {
     titulo: "Introducción y fundamentos de programación en Python",
@@ -145,6 +153,7 @@ export const cursosEjemplo: Curso[] = [
     estaCancelado: false,
     imgCurso: cursosAssets.imgPythonCursos,
     aficheImg: afichesAssets.imgPythonAfiche,
+    techs: [{ nombre: "Python", imgUrl: logosCursosAssets.cursoPython.logoCursoPython }]
   },
   {
     titulo: "Introducción al Machine Learning",
@@ -171,6 +180,7 @@ export const cursosEjemplo: Curso[] = [
     estaCancelado: true,
     imgCurso: cursosAssets.imgManchineCursos,
     aficheImg: afichesAssets.imgManchineAfiche,
+    techs: [{ nombre: "Scikit", imgUrl: logosCursosAssets.cursoManchine.logoScikit }, { nombre: "Python", imgUrl: logosCursosAssets.cursoManchine.logoPython }, { nombre: "Polars", imgUrl: logosCursosAssets.cursoManchine.logoPolars }, { nombre: "MatPlotLib", imgUrl: logosCursosAssets.cursoManchine.logoMatplotlib }]
   },
   {
     titulo: "Construcción de chatbots con LangChain",
@@ -196,6 +206,7 @@ export const cursosEjemplo: Curso[] = [
     estaCancelado: true,
     imgCurso: cursosAssets.imgLangChainCursos,
     aficheImg: afichesAssets.imgLangChainAfiche,
+    techs: [{ nombre: "LangChain", imgUrl: logosCursosAssets.cursoChatbot.logoLangchain }]
   },
   {
     titulo: "React con TypeScript",
@@ -214,7 +225,14 @@ export const cursosEjemplo: Curso[] = [
         nombre: "Isaac",
         apellidos: "Gutiérrez",
         imagen: tutoresAssets.imgIG,
-        githubUrl: "https://github.com/Isaac-sys-2023"
+        redes: [
+          { nombre: "Github", url: "https://github.com/Isaac-sys-2023", img: redesAssets.github },
+          { nombre: "Tik Tok", url: "https://www.tiktok.com/@just_an_average_isaac", img: redesAssets.tikTok },
+          { nombre: "YouTube", url: "https://www.youtube.com/@iser7920", img: redesAssets.youtube },
+          { nombre: "Linkedin", url: "https://www.linkedin.com/in/isaac-gutierrez-huarachi", img: redesAssets.linkedln },
+        ],
+        descripcion: "Hola soy Isaac miembro de la SCESI.",
+        fechaNacimiento: "21-06-2004",
       },
     ],
     precioGeneral: 110,
@@ -223,9 +241,12 @@ export const cursosEjemplo: Curso[] = [
     estaCancelado: false,
     imgCurso: cursosAssets.imgReactCursos,
     aficheImg: afichesAssets.imgReactAfiche,
+    techs: [{ nombre: "Vite", imgUrl: logosCursosAssets.cursoReact.logoVite }, { nombre: "TypeScript", imgUrl: logosCursosAssets.cursoReact.logoReactTypeScript }, { nombre: "React", imgUrl: logosCursosAssets.cursoReact.logoReact }, { nombre: "GitHub", imgUrl: logosCursosAssets.cursoReact.logoGitHub }, { nombre: "Git", imgUrl: logosCursosAssets.cursoReact.logoGit }],
+  
+    estudiantes: estudiantesReact
   },
   {
-    titulo: "Desarrollo Backend con JavaScript/TypeScript",
+    titulo: "Desarrollo Backend con JavaScript / TypeScript",
     descripcion:
       "Domina el desarrollo backend con Node.js y TypeScript. En este curso práctico, construirás APIs escalables y seguras, gestionando bases de datos relacionales y NoSQL. Te enfocarás en la autenticación con JWT, el control de roles y la implementación de un stack completo para producción con Docker y Jest para las pruebas.",
     fechaInicio: "2025-09-29",
@@ -248,6 +269,7 @@ export const cursosEjemplo: Curso[] = [
     estaCancelado: false,
     imgCurso: cursosAssets.imgBackendCursos,
     aficheImg: afichesAssets.imgBackendAfiche,
+    techs: [{ nombre: "TypeScript", imgUrl: logosCursosAssets.cursoBackend.logoTypeScript }, { nombre: "NodeJS", imgUrl: logosCursosAssets.cursoBackend.logoNode }, { nombre: "Jest", imgUrl: logosCursosAssets.cursoBackend.logoJest }, { nombre: "JavaScript", imgUrl: logosCursosAssets.cursoBackend.logoJavaScript }, { nombre: "Docker", imgUrl: logosCursosAssets.cursoBackend.logoDocker }]
   },
   {
     titulo: "Introducción al Diseño y Desarrollo de Videojuegos con Godot",
@@ -273,5 +295,6 @@ export const cursosEjemplo: Curso[] = [
     estaCancelado: false,
     imgCurso: cursosAssets.imgGodotCursos,
     aficheImg: afichesAssets.imgGodotAfiche,
+    techs: [{ nombre: "Godot", imgUrl: logosCursosAssets.cursoGodot.logoGodot }]
   },
 ];

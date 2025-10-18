@@ -1,4 +1,3 @@
-//Su nombre, su edad y una descripcion suya con props
 // import "./AppTutor.css"
 import ClaseOctCuatro from "./componentes/Clase04Oct";
 import PerfilPersona from "./componentes/Clase04Oct3";

@@ -2,6 +2,8 @@ import { Outlet } from "react-router-dom";
 import Header from "../componentes/layout/Header";
 import Sidebar from "../componentes/layout/SideBar";
 import Footer from "../componentes/layout/Footer";
+import "../styles/layout/Layout.css";
+
 
 export const DashboardLayout = () => {
   return (
@@ -12,8 +14,8 @@ export const DashboardLayout = () => {
         <main className="content">
           <Outlet />
         </main>
+        <Footer />
       </div>
-      <Footer/>
     </div>
   );
 };

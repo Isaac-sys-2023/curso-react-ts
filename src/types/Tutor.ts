@@ -1,9 +1,12 @@
+import type { Red } from "./Red";
+
 export interface Tutor {
   nombre: string;
   apellidos: string;
-  edad?: number;
-  fechaNacimiento?: Date | string;
+  fechaNacimiento?: string;
   descripcion?: string;
   imagen: string;
-  githubUrl?: string;
+  redes?: Red[]
+
+  tareasUrl?: string;
 }

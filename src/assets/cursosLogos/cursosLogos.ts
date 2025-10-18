@@ -36,40 +36,47 @@ import logoReactTypeScript from "./cursoReact/TypeScript.png";
 import logoVite from "./cursoReact/Vite.js.png";
 
 export const logosCursosAssets = {
-    logoGodot,
+    cursoGodot: { logoGodot },
+    cursoAutocad: { logoAutocad },
+    cursoAndroid: {
+        logoAndroid,
+        logoAndroidStudio,
+        logoKotlin,
+    },
+    cursoBackend: {
+        logoDocker,
+        logoJavaScript,
+        logoJest,
+        logoNode,
+        logoTypeScript,
+    },
+    cursoChatbot: {
+        logoLangchain,
+    },
+    cursoHTML: {
+        logoHTML,
+        logoCSS,
+    },
+    cursoLinux: {
+        logoDebian,
+        logoLinux,
+        logoXorg,
+        logoWayland,
+    },
+    cursoManchine: {
+        logoMatplotlib,
+        logoPolars,
+        logoPython,
+        logoScikit,
+    },
+    cursoPython: { logoCursoPython, },
+    cursoReact: {
+        logoGit,
+        logoGitHub,
+        logoReact,
+        logoReactTypeScript,
+        logoVite,
+    }
 
-    logoAutocad,
 
-    logoAndroid,
-    logoAndroidStudio,
-    logoKotlin,
-
-    logoDocker,
-    logoJavaScript,
-    logoJest,
-    logoNode,
-    logoTypeScript,
-
-    logoLangchain,
-
-    logoHTML,
-    logoCSS,
-
-    logoDebian,
-    logoLinux,
-    logoXorg,
-    logoWayland,
-
-    logoMatplotlib,
-    logoPolars,
-    logoPython,
-    logoScikit,
-
-    logoCursoPython,
-
-    logoGit,
-    logoGitHub,
-    logoReact,
-    logoReactTypeScript,
-    logoVite
 }
