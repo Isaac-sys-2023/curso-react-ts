@@ -1,6 +1,6 @@
 import logoScesiLearn from "../assets/LogoSCESILEARN.jpg";
 import { afichesArrayAssets } from "../assets/afiches/afiches";
-import "../styles/views/AboutView.css";
+//import "../styles/views/AboutView.css";
 import { useState } from "react";
 
 const AboutView = () => {

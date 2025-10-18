@@ -1,6 +1,4 @@
 // import "./AppTutor.css"
-import ClaseOctCuatro from "./componentes/Clase04Oct";
-import PerfilPersona from "./componentes/Clase04Oct3";
 
 import { Routes, Route } from "react-router-dom";
 import ClaseOctCatorce from "./views/Clase14OctView";
@@ -9,6 +7,8 @@ import ClaseOctDiesiseis from "./views/Clase16OctView";
 import HomeClasesView from "./views/HomeClasesView";
 import ClaseOctCuatroDos from "./views/Clase04OctView2";
 import ClaseOctCuatroTres from "./views/Clase04OctView3";
+import ClaseOctCuatro from "./views/Clase04OctView";
+import PerfilPersona from "./componentes/Clase04Oct3";
 
 const AppTutor = () => {
     return (

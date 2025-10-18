@@ -1,6 +1,6 @@
 import type { Curso } from "../types/Curso";
 
-import "../styles/componentes/CardCurso.css";
+//import "../styles/componentes/CardCurso.css";
 import { useNavigate } from "react-router-dom";
 import TutorImage from "./TutorImage";
 
