@@ -1,0 +1,77 @@
+.curso-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 0.75rem;
+}
+
+.curso-title{
+    text-align: center;
+}
+
+.curso-tech-imagenes{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem 2rem;
+
+    width: 100%;
+}
+
+.curso-tech-image {
+    width: 5rem;
+    transition: all 0.2s ease;
+}
+
+.curso-tech-image:hover {
+    filter: drop-shadow(0 0 10px var(--color-light-purple));
+}
+
+.curso-horarios-tarjetas, .precios{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    margin: 1rem 0;
+    width: 100%; 
+}
+
+.precios{
+    margin: 0;
+}
+
+.curso-status-ind{
+    padding: 0.5rem;
+    border-radius: 1.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    margin-top: auto;
+    margin: 0.5rem 0 0 0;
+}
+
+.before-ind{
+    background-color: #F3F4F6;
+    color: #374151;
+}
+
+.now-ind{
+    background-color: #DBEAFE;
+    color: #1E40AF;
+}
+
+.after-ind{
+    background-color: #D1FAE5;
+    color: #065F46;
+}
+
+.curso-tutores-title{
+    font-size: 1.5rem;
+    padding: 1rem;
+}

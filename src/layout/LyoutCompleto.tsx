@@ -3,7 +3,7 @@ import Header from "../componentes/layout/Header";
 import NavBar from "../componentes/layout/Navbar";
 import Sidebar from "../componentes/layout/SideBar";
 import Footer from "../componentes/layout/Footer";
-//import "../styles/layout/Layout.css";
+import "../styles/layout/Layout.css";
 
 
 const FullLayout = () => {

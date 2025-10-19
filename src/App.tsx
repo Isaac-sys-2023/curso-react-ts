@@ -19,21 +19,19 @@ function App() {
     <>
       <AppTutor />
       <Routes>
-        <Route element={<LayoutBasico/>}>
-        </Route>
-
-        <Route element={<FullLayout/>}>
-        </Route>
-
-        <Route element={<LayoutClasico />}>
-          <Route path="/tareasOAV/*" element={<AppOrlando />} />
+        <Route element={<LayoutBasico />}>
           <Route path="/about" element={<AboutView />} />
           <Route path="/" element={<HomeView />} />
           <Route path="/curso/:nombre" element={<CursoView />} />
         </Route>
 
-        <Route element={<DashboardLayout/>}>
-        </Route>
+        <Route path="/tareasOAV/*" element={<AppOrlando />} />
+
+        <Route element={<FullLayout />}></Route>
+
+        <Route element={<LayoutClasico />}></Route>
+
+        <Route element={<DashboardLayout />}></Route>
         {/* <Route path="*" element={<NotFound />} /> */}
       </Routes>
     </>

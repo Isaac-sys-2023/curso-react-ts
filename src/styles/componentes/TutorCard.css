@@ -1,0 +1,107 @@
+.tutor-card {
+    /* background-color: var(--color-light-purple); */
+    padding: 1rem;
+    border-radius: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid var(--color-white);
+
+    max-width: 18.75rem;
+}
+
+.tutor-card.purple {
+    background-color: var(--color-light-purple);
+    outline: 2px solid var(--color-dark-purple);
+}
+
+.tutor-card.pink {
+    background-color: var(--color-light-pink);
+    outline: 2px solid var(--color-dark-pink);
+}
+
+.tutor-card.yellow {
+    background-color: var(--color-light-yellow);
+    outline: 2px solid var(--color-dark-yellow);
+}
+
+.tutor-card.black {
+    background-color: var(--color-black);
+    outline: 2px solid var(--color-black);
+}
+
+.tutor-card.black .tutor-card-red,
+.tutor-card.black .tutor-card-info,
+.tutor-card.black .tutor-descripcion {
+    filter: brightness(0) invert(1);
+}
+
+
+.tutor-card-header,
+.tutor-card-redes {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    padding: 0.5rem;
+}
+
+.tutor-card-redes {
+    padding: 0;
+    gap: 0.5rem;
+}
+
+.tutor-card-info {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex: 2;
+    text-align: center;
+}
+
+.tutor-card-info p {
+    margin: 0;
+    padding: 0;
+}
+
+.tutor-descripcion {
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem 0;
+    margin: 0;
+}
+
+.tutor-card-redes a,
+.tutor-card-red {
+    width: 2rem;
+    height: 2rem;
+}
+
+.tutor-card-red:hover {
+    filter: drop-shadow(0 0 10px var(--color-white));
+}
+
+.student-button {
+    background: var(--color-black);
+    color: white;
+    border: 2px solid var(--color-white);
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    margin-top: 0.5rem;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    outline: 2px solid var(--color-black);
+}
+
+.student-button:hover {
+    color: white;
+    background: var(--color-bg-black);
+}

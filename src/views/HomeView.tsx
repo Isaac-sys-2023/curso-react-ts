@@ -3,7 +3,7 @@ import type { Curso } from "../types/Curso";
 import CardCurso from "../componentes/CardCurso";
 import { useState } from "react";
 
-//import "../styles/views/HomeView.css";
+import "../styles/views/HomeView.css";
 
 const HomeView = () => {
   const [cursos, setCursos] = useState<Curso[]>(cursosEjemplo);

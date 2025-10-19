@@ -1,0 +1,48 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.link-navbar {
+    position: relative;
+    text-decoration: none;
+
+    color: var(--color-white);
+    padding: 0.25rem 0rem;
+    border-radius: 0.5rem;
+}
+
+.link-navbar::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+
+    color: var(--color-white);
+
+    transition: width 0.3s ease;
+}
+
+.link-navbar:hover {
+    color: var(--color-white);
+}
+
+.link-navbar:hover::after {
+    width: 100%;
+    background-color: var(--color-white);
+}
+
+/* 🔥 Estado activo (ruta actual) */
+.link-navbar.active {
+    color: var(--color-white);
+}
+
+.link-navbar.active::after {
+    width: 100%;
+    background-color: var(--color-white);
+}

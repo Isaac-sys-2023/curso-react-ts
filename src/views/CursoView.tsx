@@ -1,7 +1,7 @@
 import { useLocation } from "react-router-dom";
 import type { Horario } from "../types/Horario";
 import type { Tutor } from "../types/Tutor";
-//import "../styles/views/CursoView.css";
+import "../styles/views/CursoView.css";
 import type { Tech } from "../types/Tech";
 // import TechSlider from "../componentes/TechSlider";
 import Tarjeta from "../componentes/Tarjeta";
