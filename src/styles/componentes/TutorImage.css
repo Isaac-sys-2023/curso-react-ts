@@ -1,0 +1,40 @@
+.img-tutor {
+    border-radius: 50%;
+    object-fit: cover;
+
+    border: 4px solid #fff;
+    outline: 4px solid var(--color-dark-purple);
+}
+
+.img-tutor.purple {
+    outline: 4px solid var(--color-dark-purple);
+}
+
+.img-tutor.purple:hover {
+    outline: 4px solid var(--color-dark-purple-hover);
+}
+
+.img-tutor.pink {
+    outline: 4px solid var(--color-dark-pink);
+}
+
+.img-tutor.pink:hover {
+    outline: 4px solid var(--color-dark-pink-hover);
+}
+
+.img-tutor.yellow {
+    outline: 4px solid var(--color-dark-yellow);
+}
+
+.img-tutor.yellow:hover {
+    outline: 4px solid var(--color-dark-yellow-hover);
+}
+
+.img-tutor.black {
+    border: 4px solid var(--color-black);
+    outline: 4px solid var(--color-white);
+}
+
+.img-tutor.black:hover {
+    outline: 4px solid var(--color-light-black);
+}

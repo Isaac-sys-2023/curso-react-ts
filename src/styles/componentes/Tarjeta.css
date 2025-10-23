@@ -1,0 +1,44 @@
+.tarjeta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* border: 2px solid var(--color-dark-purple); */
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+
+    /* background-color: var(--color-light-purple); */
+
+    min-width: 6.5rem;
+}
+
+.tarjeta-title{}
+
+.tarjeta-descripcion{
+    margin: 0;
+}
+
+.tarjeta.purple{
+    border: 2px solid var(--color-dark-purple);
+}
+.purple{
+    background-color: var(--color-light-purple);
+    color: var(--color-black);
+}
+
+.tarjeta.pink{
+    border: 2px solid var(--color-dark-pink);
+}
+.pink{
+    background-color: var(--color-light-pink);
+    color: var(--color-black);
+}
+
+.tarjeta.yellow{
+    border: 2px solid var(--color-dark-yellow);
+}
+.yellow{
+    background-color: var(--color-light-yellow);
+    color: var(--color-black);
+}

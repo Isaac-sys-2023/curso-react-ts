@@ -1,0 +1,125 @@
+/* .tech-image {
+    width: 10rem;
+    transition: all 0.2s ease;
+}
+
+.logos{
+  width: 80%;
+  display: flex;
+  margin: auto;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos-slide{
+  animation: 10s slide infinite linear;
+  img{
+    height: 10rem;
+    margin: 0 3rem;
+  }
+}
+
+.logos::before{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100%;
+  background: linear-gradient(to left, rgba(255,255,255,0), rgba(255,255,255));
+  content: " ";
+  z-index: 1;
+}
+
+.logos::after{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255));
+  content: " ";
+  z-index: 1;
+}
+
+@keyframes slide{
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(-100%);
+  }
+} */
+
+.logos {
+  width: 80%;
+  display: flex;
+  margin: auto;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos-slide {
+  display: inline-flex; /* para que los dos slides se junten en línea */
+  animation: 15s slide infinite linear;
+}
+
+.logos-slide.static {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: none; /* sin animación si solo hay un logo */
+}
+
+.logos-slide img {
+  height: 10rem;
+  margin: 0 3rem;
+  flex-shrink: 0;
+}
+
+.logos-slide.static img {
+  height: 10rem;
+  margin: 0 0.5rem;
+  flex-shrink: 0;
+}
+
+.logos::before,
+.logos::after {
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 100%;
+  content: "";
+  z-index: 1;
+}
+
+.logos.l-static::before,
+.logos.l-static::after {
+  position: absolute;
+  top: 0;
+  width: 200px;
+  height: 100%;
+  content: none;
+  z-index: 1;
+}
+
+.logos::before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255,255,255,0), rgba(255,255,255));
+}
+
+.logos::after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255));
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
