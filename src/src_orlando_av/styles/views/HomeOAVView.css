@@ -1,0 +1,41 @@
+/* styles/views/HomeOAVView.css */
+.home-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--oav-bg-gradient-start) 0%, var(--oav-bg-gradient-end) 100%);
+  padding: var(--oav-spacing-xl);
+}
+
+.home-header {
+  max-width: 1200px;
+  margin: 0 auto var(--oav-spacing-xl);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.home-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tareas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: var(--oav-spacing-lg);
+  padding: var(--oav-spacing-md) 0;
+}
+
+@media (max-width: 768px) {
+  .home-container {
+    padding: var(--oav-spacing-md);
+  }
+
+  .home-title {
+    font-size: 1.875rem;
+  }
+
+  .tareas-grid {
+    grid-template-columns: 1fr;
+  }
+}

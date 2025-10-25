@@ -1,5 +1,5 @@
 import CardTarea2 from "../componentes/CardTarea2";
-import type { Tarea } from "../types/Tarea";
+import type { Tarea } from "../types/Tarea2";
 import { useNavigate } from "react-router-dom";
 
 const Clase5 = () => {

@@ -1,4 +1,4 @@
-import type { Tarea } from "../types/Tarea";
+import type { Tarea } from "../types/Tarea2";
 
 interface TareaProps {
     tarea?: Tarea;

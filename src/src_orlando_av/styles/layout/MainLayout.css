@@ -1,0 +1,17 @@
+/* styles/layout/MainLayout.css */
+.main-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--oav-bg-main);
+}
+
+.main-content {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    padding: var(--oav-spacing-md);
+  }
+}

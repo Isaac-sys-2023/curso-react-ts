@@ -1,0 +1,13 @@
+/* styles/components/layout/Footer.css */
+.main-footer {
+  background: var(--oav-footer-bg);
+  color: var(--oav-text-white);
+  text-align: center;
+  padding: var(--oav-spacing-lg);
+  margin-top: auto;
+}
+
+.main-footer p {
+  margin: 0;
+  font-size: 0.875rem;
+}

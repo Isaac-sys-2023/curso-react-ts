@@ -1,3 +1,4 @@
+/* src/index.css */
 *{
   margin: 0;
   padding: 0;
@@ -34,6 +35,62 @@
   --color-text: #2C2C2C;
   --color-text-secondary: #7F8C8D;
   --color-border: #ECECEC;
+
+  /*Variables Orlando*/
+  /* Colores principales */
+  --oav-primary: #667eea;
+  --oav-primary-dark: #2668ca;
+  --oav-primary-light: #8b9dff;
+  --oav-primary-hover: #2563eb;
+  
+  /* Colores de fondo */
+  --oav-bg-main: #f9fafb;
+  --oav-bg-card: #ffffff;
+  --oav-bg-gradient-start: #374068;
+  --oav-bg-gradient-end: #a49cac;
+  
+  /* Colores de texto */
+  --oav-text-primary: #1f2937;
+  --oav-text-secondary: #6b7280;
+  --oav-text-light: #9ca3af;
+  --oav-text-white: #ffffff;
+  
+  /* Colores de estado */
+  --oav-status-pending-bg: #fef3c7;
+  --oav-status-pending-text: #92400e;
+  --oav-status-progress-bg: #dbeafe;
+  --oav-status-progress-text: #1e40af;
+  --oav-status-completed-bg: #d1fae5;
+  --oav-status-completed-text: #065f46;
+  
+  /* Colores de categoría */
+  --oav-category-bg: #f3f4f6;
+  --oav-category-text: #4b5563;
+  
+  /* Colores de bordes */
+  --oav-border-light: #e5e7eb;
+  --oav-border-card: #3b82f6;
+  
+  /* Footer */
+  --oav-footer-bg: #1f2937;
+  
+  /* Sombras */
+  --oav-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --oav-shadow-md: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --oav-shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.15);
+  
+  /* Espaciado */
+  --oav-spacing-xs: 0.25rem;
+  --oav-spacing-sm: 0.5rem;
+  --oav-spacing-md: 1rem;
+  --oav-spacing-lg: 1.5rem;
+  --oav-spacing-xl: 2rem;
+  
+  /* Border radius */
+  --oav-radius-sm: 6px;
+  --oav-radius-md: 8px;
+  --oav-radius-lg: 12px;
+  --oav-radius-full: 20px;
 
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

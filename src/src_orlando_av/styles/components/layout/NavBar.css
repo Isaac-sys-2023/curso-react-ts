@@ -1,0 +1,11 @@
+.link-navbar {
+  display: flex;
+  gap: var(--oav-spacing-lg);
+  align-items: center;
+}
+.link-navbar a {
+  color: var(--oav-text-white);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}

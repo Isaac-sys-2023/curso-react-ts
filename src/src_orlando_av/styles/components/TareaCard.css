@@ -1,0 +1,117 @@
+/* styles/components/TareaCard.css */
+.tarea-card {
+  background: var(--oav-bg-card);
+  border-radius: var(--oav-radius-lg);
+  padding: var(--oav-spacing-lg);
+  box-shadow: var(--oav-shadow-md);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  gap: var(--oav-spacing-md);
+  border-left: 4px solid var(--oav-border-card);
+}
+
+.tarea-card:hover {
+  transform: translateY(-4px);
+  background-color: var(--oav-bg-gradient-end);
+  box-shadow: var(--oav-shadow-lg);
+}
+
+.tarea-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tarea-numero {
+  font-weight: 700;
+  color: var(--oav-border-card);
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.tarea-estado {
+  padding: var(--oav-spacing-xs) 0.75rem;
+  border-radius: var(--oav-radius-full);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.estado-pendiente {
+  background: var(--oav-status-pending-bg);
+  color: var(--oav-status-pending-text);
+}
+
+.estado-progreso {
+  background: var(--oav-status-progress-bg);
+  color: var(--oav-status-progress-text);
+}
+
+.estado-completada {
+  background: var(--oav-status-completed-bg);
+  color: var(--oav-status-completed-text);
+}
+
+.tarea-titulo {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--oav-text-primary);
+  margin: 0;
+}
+
+.tarea-descripcion {
+  color: var(--oav-text-secondary);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.tarea-categoria {
+  display: inline-block;
+  background: var(--oav-category-bg);
+  color: var(--oav-category-text);
+  padding: var(--oav-spacing-xs) 0.75rem;
+  border-radius: var(--oav-radius-sm);
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.tarea-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: var(--oav-spacing-sm);
+  padding-top: var(--oav-spacing-md);
+  border-top: 1px solid var(--oav-border-light);
+}
+
+.tarea-fecha {
+  color: var(--oav-text-secondary);
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  gap: var(--oav-spacing-xs);
+}
+
+.tarea-btn {
+  background: var(--oav-border-card);
+  color: var(--oav-text-white);
+  border: none;
+  padding: var(--oav-spacing-sm) 1.25rem;
+  border-radius: var(--oav-radius-md);
+  font-weight: 600;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.tarea-btn:hover {
+  background: var(--oav-primary-hover);
+}
+
+.tarea-btn:active {
+  transform: scale(0.98);
+}

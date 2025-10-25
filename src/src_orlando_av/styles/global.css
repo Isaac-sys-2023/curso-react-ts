@@ -1,0 +1,88 @@
+/* styles/global.css */
+/*ESTE ARCHIVO ERA PARA PONER TODAS LAS VARIABLES DE CSS QUE IBA USAR EN MI SRC_ORLANDO_AV, LO ESTABA HACIENDOLO ASI PERO REVISE EL VIDEO*/
+:root {
+  /* Colores Principales */
+  --primary-color: #667eea;
+  --primary-dark: #764ba2;
+  --primary-light: #a49cac;
+  --primary-hover: #2563eb;
+  
+  /* Colores de Estado */
+  --estado-pendiente-bg: #fef3c7;
+  --estado-pendiente-text: #92400e;
+  --estado-progreso-bg: #dbeafe;
+  --estado-progreso-text: #1e40af;
+  --estado-completada-bg: #d1fae5;
+  --estado-completada-text: #065f46;
+  
+  /* Colores de Texto */
+  --text-primary: #1f2937;
+  --text-secondary: #6b7280;
+  --text-light: #9ca3af;
+  --text-white: #ffffff;
+  
+  /* Colores de Fondo */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f9fafb;
+  --bg-tertiary: #f3f4f6;
+  --bg-dark: #1f2937;
+  
+  /* Colores de Acento */
+  --accent-blue: #3b82f6;
+  --accent-blue-hover: #2563eb;
+  
+  /* Sombras */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.15);
+  
+  /* Bordes */
+  --border-radius-sm: 6px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 12px;
+  --border-radius-full: 20px;
+  
+  /* Espaciado */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  
+  /* Tamaños de Fuente */
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 2rem;
+  --font-size-4xl: 2.5rem;
+  
+  /* Pesos de Fuente */
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  
+  /* Transiciones */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+  
+  /* Anchos Máximos */
+  --max-width-content: 1200px;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*PROBANDO EL ORDEN DE EJECUCION DE CSS, ESTO PUEDE SOBRESCRIBIR OTROS ESTILOS. */
+button {
+  background-color: #4a90e2;  /* Azul claro */
+    color: white;
+}
