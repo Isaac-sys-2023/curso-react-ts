@@ -8,6 +8,7 @@ import { Routes, Route } from "react-router-dom";
 import AboutView from "./views/AboutView";
 import CursoView from "./views/CursoView";
 //import NotFound from "./views/NotFoundView";
+import AppLaura from "./src_laura_ml/AppLaura";
 import AppOrlando from "./src_orlando_av/AppOrlando";
 import LayoutBasico from "./layout/LayoutBasico";
 import LayoutClasico from "./layout/LayoutClasico";
@@ -34,6 +35,7 @@ function App() {
         <Route element={<DashboardLayout />}></Route>
         {/* <Route path="*" element={<NotFound />} /> */}
       </Routes>
+      <AppLaura/>
     </>
   );
 }

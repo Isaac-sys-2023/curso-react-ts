@@ -16,7 +16,7 @@ const TareaView5p2 = () => {
   return (
     <>
       <form onSubmit={handleSubmit}>
-        <label>Nombre</label>
+        <label>Nombre {nombre}</label>
         <input
           type="text"
           placeholder="Nombre"

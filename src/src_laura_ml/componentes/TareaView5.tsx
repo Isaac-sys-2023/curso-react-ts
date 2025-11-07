@@ -1,8 +1,6 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
 
-const Tarea5 = () => {
-  const navigate = useNavigate();
+const tarea5 = () => {
   const [mail, setMail] = useState<string>("");
  
 
@@ -16,10 +14,7 @@ const Tarea5 = () => {
   return (
     <>
       <h1>Tarea 5</h1>
-      <p>Login Monday</p>
-                <button onClick={() => window.open("https://auth.monday.com/users/sign_up_new?origin=hp_fullbg_page_header")}>
-                    Monday
-                </button>
+      <p>Login</p>
 
       <h3>
         Usuario escribe → onChange → actualiza estado → React vuelve a
@@ -27,7 +22,7 @@ const Tarea5 = () => {
       </h3>
 
       <form onSubmit={handleSubmit}>
-        <label>Mail</label>
+        <label>Mail {mail}</label>
         <input
           type="email"
           placeholder="Mail"
@@ -35,11 +30,11 @@ const Tarea5 = () => {
           onChange={(e) => setMail(e.target.value)}
         />
 
-        <button onClick={()=>navigate("/laura/Tarea5")} type="submit">continuar</button>
+        <button type="submit">continuar</button>
         
       </form>
     </>
   );
 };
 
-export default Tarea5;
+export default tarea5;
